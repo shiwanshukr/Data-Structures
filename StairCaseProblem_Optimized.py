@@ -5,7 +5,13 @@ Created on Thu Jul 18 13:12:05 2019
 
 @author: shiwanshu
 """
-
+'''
+Explanations:
+There is a Stair, and you have to return the total number of ways in which a person can climb it. 
+eg. if n = 2; --> (1,2),(2), so total 2, similarly for n = 3; it is 4 , for n=1 ; it is 1.
+I have implemented this program, in such a way that it will take minimum amount of time. I have created a dictionary which stores the 
+new values so when ever there is a second time searching for those value it can look up in o(n) time.  
+'''
 def staircase(n):
     num_dict = dict({})
     return staircase_dict(n,num_dict)
