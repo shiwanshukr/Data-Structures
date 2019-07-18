@@ -53,7 +53,7 @@ class HashTable(object):
 hash_table = HashTable()
 
 # Test calculate_hash_value
-# Should be 8568
+# Should be 8372
 print (hash_table.calculate_hash_value('SHIV'))
 
 # Test lookup edge case
@@ -62,10 +62,10 @@ print (hash_table.lookup('SHIV'))
 
 # Test store
 hash_table.store('SHIV')
-# Should be 8568
+# Should be 8372
 print (hash_table.lookup('SHIV'))
 
 # Test store edge case
 hash_table.store('SHIV')
-# Should be 8568
+# Should be 8372
 print (hash_table.lookup('SHIV'))
